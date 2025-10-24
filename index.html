@@ -2,60 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aneeba Chaudary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aneeba Chaudary — Materials Scientist</title>
+  <meta name="description" content="PFAS‑free omniphobic textile coatings • Janus nanoparticles • Sustainable surface engineering" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; color: #222; }
-    header { background: #222; color: white; text-align: center; padding: 2rem 1rem; }
-    nav a { color: #ffc107; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    h1, h2 { color: #444; }
-    footer { text-align: center; padding: 1rem; color: #666; }
+    :root{
+      --bg:#0b0c10; --panel:#111318; --accent:#4fd1c5; --muted:#a3aab8; --text:#e8ecf1; --ring:#2a2f3a;
+      --card:#12141b; --cardBorder:#1c2230; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:0 20px}
+    /* Nav */
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(11,12,16,.75);backdrop-filter:blur(8px);border-bottom:1px solid var(--ring)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:700;letter-spacing:.3px}
+    .nav-links a{margin-left:18px;color:var(--muted)}
+    .nav-links a.active, .nav-links a:hover{color:var(--text)}
+    /* Hero */
+    .hero{padding:80px 0 40px;background:linear-gradient(180deg,#0b0c10 0%, #0b0c10 60%, #0e1016 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .chip{display:inline-block;padding:6px 10px;border:1px solid var(--cardBorder);border-radius:999px;color:var(--muted);font-size:12px;margin-bottom:14px}
+    h1{margin:.2rem 0 1rem;font-size:42px;line-height:1.1}
+    .lead{color:var(--muted);font-size:18px}
+    .cta{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#0b0c10;padding:12px 16px;border-radius:12px;font-weight:700;border:0}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid var(--cardBorder)}
+    .card{background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;box-shadow:var(--shadow)}
+    .avatar{width:160px;height:160px;border-radius:20px;background:#222;border:1px solid var(--cardBorder)}
+    .badge-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .badge{font-size:12px;background:#0f1320;border:1px solid #1d2330;padding:6px 10px;border-radius:999px;color:#b7bfd2}
+    /* Sections */
+    section{padding:56px 0;border-top:1px solid var(--ring)}
+    h2{font-size:26px;margin:0 0 18px}
+    .grid{display:grid;gap:18px}
+    .grid.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card-inner{padding:18px}
+    .muted{color:var(--muted)}
+    /* Footer */
+    footer{padding:30px 0;color:#9aa2b3}
+    /* Responsive */
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Aneeba Chaudary</h1>
-    <p>PhD Candidate · Materials Science & Engineering · Iowa State University</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#awards">Awards</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Aneeba Chaudary</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks & Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="chip">PFAS‑free omniphobic coatings • Janus nanoparticles • Sustainable materials</div>
+        <h1>Materials Scientist focused on <span style="color:var(--accent)">functional surfaces</span> and durable, PFAS‑free textile coatings.</h1>
+        <p class="lead">Ph.D. Candidate, Materials Science & Engineering — Iowa State University (Jiang Lab). I design stratified, re‑entrant surface architectures using Janus nanoparticles and crosslinkable binders to achieve robust oil/water repellency.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn secondary" href="Aneeba_CV.pdf">Download CV</a>
+          <a class="btn secondary" href="mailto:Chaudary@iastate.edu">Email me</a>
+        </div>
+        <div class="badge-row">
+          <span class="badge">XRD</span><span class="badge">AFM</span><span class="badge">XPS</span><span class="badge">FTIR</span><span class="badge">DSC/TGA</span><span class="badge">Wettability (CA)</span><span class="badge">Colloids</span>
+        </div>
+      </div>
+      <div class="card" style="padding:22px;display:flex;gap:16px;align-items:center;">
+        <img src="headshot.jpg" alt="Aneeba portrait placeholder" class="avatar">
+        <div>
+          <div class="muted">Currently at</div>
+          <div style="font-weight:700;margin:.2rem 0">Iowa State University</div>
+          <div class="muted">Advisor: Dr. Shan Jiang</div>
+          <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="badge" href="https://www.linkedin.com/in/aneebachaudary/">LinkedIn</a>
+            <a class="badge" href="https://scholar.google.com/citations?user=Qonuoq8AAAAJ">Google Scholar</a>
+            <a class="badge" href="https://github.com/aneebachaudary26-droid">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I am developing PFAS-free omniphobic textile coatings by synthesizing and stratifying Janus nanoparticles with crosslinkable binders. My broader interests include surface engineering, sustainable materials, and supramolecular chemistry.</p>
+    <div class="container grid">
+      <h2>About</h2>
+      <div class="card">
+        <div class="card-inner">
+          <p>I develop fluorine‑free omniphobic coatings for textiles by marrying <strong>Janus nanoparticles</strong> with <strong>crosslinkable acrylic/silane binders</strong>. My work targets durable repellency via hierarchical roughness, stratification, and re‑entrant geometries while maintaining breathability and sustainability.</p>
+          <p class="muted">Keywords: surface engineering, wetting, dynamic covalent chemistry, coatings durability, contact‑angle goniometry, AFM/SEM, confocal, thermal curing.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <h2>Research Focus</h2>
+      <div class="grid cards">
+        <article class="card"><div class="card-inner">
+          <h3>PFAS‑free Omniphobic Textiles</h3>
+          <p class="muted">PS‑co‑PVA/MPTS and PS‑PAA@SO<sub>3</sub>⁻/MPTS Janus nanoparticles integrated with BA‑based binders and thermal crosslinkers to create re‑entrant topographies and low liquid adhesion.</p>
+        </div></article>
+        <article class="card"><div class="card-inner">
+          <h3>Stratification & Re‑entrant Design</h3>
+          <p class="muted">Controlling particle size ratios and curing to drive top‑layer enrichment, double re‑entrant features, and robust CA/SA performance against oils.</p>
+        </div></article>
+        <article class="card"><div class="card-inner">
+          <h3>DCC & Self‑Assembly</h3>
+          <p class="muted">Imine/hydrazone macrocycles and cages to probe structure–function relationships in host–guest systems relevant to barrier coatings.</p>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Key Projects</h2>
-    <ul>
-      <li><strong>PFAS-free coatings:</strong> PS-co-PVA/MPTS Janus nanoparticles for oil/water repellency.</li>
-      <li><strong>Dynamic covalent chemistry:</strong> Self-assembly of imine/hydrazone-based macrocycles.</li>
-    </ul>
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <div class="grid cards">
+        <article class="card"><div class="card-inner">
+          <h3>PFAS‑free Fabric Repellency</h3>
+          <p class="muted">Formulating BA binders (DVB/NMA) with JNPs; optimizing cure and particle size distribution (100–500 nm) for oil/water repellency and wash durability.</p>
+          <p class="muted">Role: lead synthesis, coating, CA/SA testing, AFM roughness analysis, ANOVA stats.</p>
+        </div></article>
+        <article class="card"><div class="card-inner">
+          <h3>Nanocellulose/Chitosan Aerogels</h3>
+          <p class="muted">Thermal management and oil‑sorbent aerogels; structure–property tuning via ice templating and silica coatings.</p>
+        </div></article>
+        <article class="card"><div class="card-inner">
+          <h3>Surface Silanization</h3>
+          <p class="muted">MPTS/DCDMS vapor treatments to engineer Si–O–Si networks and enhance binder adhesion and weatherability.</p>
+        </div></article>
+      </div>
+    </div>
   </section>
 
-  <section id="awards">
-    <h2>Awards & Leadership</h2>
-    <ul>
-      <li>Outstanding Student Award – Donghua University (twice)</li>
-      <li>Vice President – Pakistani Students Association, ISU</li>
-      <li>Moderator & Speaker – International Materials Conference</li>
-    </ul>
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <h2>Publications (selection)</h2>
+      <div class="card"><div class="card-inner">
+        <ol>
+          <li><em>Beyond Surfactants: Janus Particles for Functional Interfaces and Coatings</em>, <strong>Langmuir</strong>, 2025.</li>
+          <li><em>Two sides of the coin: Synthesis and applications of Janus particles</em>, <strong>Nanoscale</strong>, 2025.</li>
+          <li><em>A novel dilution strategy for tuning Janus particle morphology</em>, <strong>JCIS</strong>, 2025.</li>
+          <li><em>Polypropylene–chitosan sponges for oil‑spill cleanup</em>, <strong>Polymer Bulletin</strong>, 2023.</li>
+          <li><em>SiO₂ aerogels coating on spacer fabrics</em>, <strong>JWPE</strong>, 2023.</li>
+          <li><em>Nanocellulose/chitosan aerogels for thermal management</em>, <strong>Cellulose</strong>, 2022.</li>
+        </ol>
+        <p class="muted">See Google Scholar for full list.</p>
+      </div></div>
+    </div>
   </section>
 
+  <!-- TALKS & AWARDS -->
+  <section id="talks">
+    <div class="container">
+      <h2>Talks, Service & Awards</h2>
+      <div class="grid cards">
+        <article class="card"><div class="card-inner">
+          <h3>Invited & Conference</h3>
+          <ul class="muted">
+            <li>Moderator/Speaker — Environmentally‑Sound Technologies Workshop (2022)</li>
+            <li>Course TA & guest‑speaker coordination (GAPS Program, ISU)</li>
+          </ul>
+        </div></article>
+        <article class="card"><div class="card-inner">
+          <h3>Peer Review</h3>
+          <p class="muted">Verified Web of Science Reviewer — <em>Journal of Industrial Textiles</em> (8 reviews; flame resistance, nanofibers, protective textiles).</p>
+        </div></article>
+        <article class="card"><div class="card-inner">
+          <h3>Awards</h3>
+          <ul class="muted">
+            <li>Outstanding International Student — Donghua University (2020, 2022)</li>
+            <li>Vice President — Pakistani Students Association, ISU (2024–2025)</li>
+          </ul>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:aneeba@iastate.edu">aneeba@iastate.edu</a></p>
-    <p><a href="https://www.linkedin.com/in/aneeba-chaudary">LinkedIn</a> | <a href="https://scholar.google.com/">Google Scholar</a></p>
+    <div class="container">
+      <h2>Get in touch</h2>
+      <div class="card"><div class="card-inner">
+        <p>Email: <a href="mailto:Chaudary@iastate.edu">Chaudary@iastate.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aneebachaudary/">linkedin.com/in/aneebachaudary</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=Qonuoq8AAAAJ">scholar profile</a></p>
+        <p class="muted">For media/CV, see header buttons. Replace <code>headshot.jpg</code> and <code>Aneeba_CV.pdf</code> with your actual files in this repo.</p>
+      </div></div>
+    </div>
   </section>
 
   <footer>
-    © <script>document.write(new Date().getFullYear());</script> Aneeba Chaudary
+    <div class="container">© <span id="y"></span> Aneeba Chaudary · Built with HTML/CSS · Hosted on GitHub Pages</div>
   </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
