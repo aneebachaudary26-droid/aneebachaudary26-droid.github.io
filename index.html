@@ -181,7 +181,7 @@
             text-align: center;
         }
 
-        .hero-photo {
+        /* .hero-photo {
             width: 12rem;
             height: 12rem;
             margin: 0 auto 2rem;
@@ -191,6 +191,24 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        } */
+        .hero-photo {
+            width: 10rem;
+            height: 10rem;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(254, 215, 10, 0.2), rgba(250, 235, 215, 0.1));
+            border: 2px solid rgba(254, 215, 10, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 360px) {
+            .hero-photo {
+                width: 8.5rem;
+                height: 8.5rem;
+            }
         }
 
         /* .hero-photo svg {
@@ -225,11 +243,18 @@
             margin-bottom: 2rem;
         }
 
+        /* .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        } */
         .hero-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 1rem;
         }
 
         /* Button */
@@ -517,7 +542,7 @@
             }
         }
 
-        @media (max-width: 767px) {
+        /* @media (max-width: 767px) {
             nav {
                 display: none;
             }
@@ -532,6 +557,23 @@
 
             .hero-subtitle {
                 font-size: 1.25rem;
+            }
+        } */
+        @media (max-width: 767px) {
+            nav {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2rem; /* reduced from 2.5rem */
+            }
+            .hero-subtitle {
+                font-size: 1.125rem; /* reduced from 1.25rem */
+            }
+            .hero-org {
+                font-size: 1rem;
             }
         }
 
@@ -624,6 +666,13 @@
                 <a href="#contact" class="btn btn-outline">
                     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     Contact Me
+                </a>
+                !-- Download Resume Button -->
+                <a href="Aneeba_CV.pdf" class="btn btn-outline" download>
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download Resume
                 </a>
             </div>
         </div>
